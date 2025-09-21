@@ -1,0 +1,124 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+header {
+  font-family: 'Playfair Display', serif;
+  background-color: #0d3b66;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+h2 {
+  color: #0d3b66;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+ol, ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+ol li {
+  margin-bottom: 8px;
+}
+
+ul li {
+  list-style-type: square;
+  margin-bottom: 6px;
+}
+
+figure {
+  text-align: center;
+  margin: 30px 0;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #666;
+}
+
+.links {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.links a {
+  color: #0d3b66;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: #faa916;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #0d3b66;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #faa916;
+  color: #333;
+}
+
+.back-home {
+  margin: 20px;
+}
+
+.back-home a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.back-home a:hover {
+  text-decoration: underline;
+}

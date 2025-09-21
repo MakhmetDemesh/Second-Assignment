@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task 3: Grades & Feedback</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 15px;
+      color: #333;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    thead th {
+      background: #0077cc;
+      color: white;
+    }
+    tbody tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    tbody tr.highlight-row {
+      background: #fffbcc;
+      font-weight: bold;
+    }
+
+    form {
+      background: #f2f2f2;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    form textarea {
+      resize: vertical;
+      min-height: 70px;
+    }
+    .radio-group {
+      margin-top: 6px;
+    }
+    .radio-group label {
+      margin-right: 15px;
+      font-weight: normal;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">← Home</a>
+  </nav>
+
+  <h1>Student Grades and Feedback Form</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Subject & Grade</th>
+      </tr>
+      <tr>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Thomas Jefferson</td>
+        <td>Math</td>
+        <td>A</td>
+      </tr>
+      <tr class="highlight-row">
+        <td>Joseph Stalin</td>
+        <td>Science</td>
+        <td>A-</td>
+      </tr>
+      <tr>
+        <td>Bruce Lee</td>
+        <td>English</td>
+        <td>B</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="role">Role:</label>
+    <select id="role" name="role" required>
+      <option value="">Select your role</option>
+      <option value="student">Student</option>
+      <option value="teacher">Teacher</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label>Did you find this website helpful?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="helpful" value="yes" required /> Yes</label>
+      <label><input type="radio" name="helpful" value="no" /> No</label>
+    </div>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Your feedback..."></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
